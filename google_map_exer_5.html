@@ -59,14 +59,15 @@
             //
             //            });
             var mitInfoVindue = new google.maps.InfoWindow({
-                content: "besøg onkel Bruno",
-                position: {
-                    lat: 45.753478,
-                    lng: 13.657289
-                }
+                content: "besøg onkel Bruno <a href='http://www.comune.duino-aurisina.ts.it/'>Link</a>",
+                //                position: {
+                //                    lat: 45.753478,
+                //                    lng: 13.657289
+                //                }
 
             })
-            mitInfoVindue.open(map);
+//            mitInfoVindue.open(map);
+            mitInfoVindue.open(map, marker1);
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTW30eRaEtOWFRzGtj1L-fl5eewstY8KQ&callback=initMap">
