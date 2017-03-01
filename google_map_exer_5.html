@@ -32,7 +32,7 @@
                 lng: 13.657289
             };
             var myLatLng2 = {
-              lat: 45.763478,
+                lat: 45.763478,
                 lng: 13.667289
             };
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -51,6 +51,11 @@
                 title: 'Hello World2!'
             });
         }
+
+        marker1.addListener('click', function () {
+            map.setZoom(8);
+            map.setCenter(marker.getPosition());
+        });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTW30eRaEtOWFRzGtj1L-fl5eewstY8KQ&callback=initMap">
     </script>
