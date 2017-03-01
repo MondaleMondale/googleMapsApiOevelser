@@ -45,19 +45,28 @@
                 map: map,
                 title: 'Hello World!'
             });
-            var marker2 = new google.maps.Marker({
-                position: myLatLng2,
-                map: map,
-                title: 'Hello World2!'
-            });
+            //            var marker2 = new google.maps.Marker({
+            //                position: myLatLng2,
+            //                map: map,
+            //                title: 'Hello World2!'
+            //            });
+            //
+            //
+            //            marker1.addListener('click', function () {
+            //                alert("ONKEL BRUNO!");
+            //                map.setZoom(8);
+            //                map.setCenter(marker.getPosition());
+            //
+            //            });
+            var mitInfoVindue = new google.maps.InfoWindow({
+                content: "besøg onkel Bruno",
+                position: {
+                    lat: 45.753478,
+                    lng: 13.657289
+                }
 
-
-            marker1.addListener('click', function () {
-                alert("ONKEL BRUNO!");
-                map.setZoom(8);
-                map.setCenter(marker.getPosition());
-
-            });
+            })
+            mitInfoVindue.open(map);
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTW30eRaEtOWFRzGtj1L-fl5eewstY8KQ&callback=initMap">
